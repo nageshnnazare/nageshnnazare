@@ -1,5 +1,9 @@
 <h1 align = "center">  Hello, I am Nagesh ! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="45px"></h1>
 
+<p align="center">
+  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=CXX Software Developer;Novice Web Developer;Open-Source Community Fan;Learn | Unlearn | Relearn;&center=true&width=580&height=45"></a>
+</p>
+
 <div align="center" style="text-align=center; background-color:white">
 
 <a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a>
@@ -29,4 +33,10 @@
 
 <div align="center">
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nageshnnazare&layout=compact&theme=gotham&hide_border=true&show_icons=true" />
-</div>
+<div align="center">
+
+<div align="center">
+
+[![Nagesh's github activity graph](https://activity-graph.herokuapp.com/graph?username=nageshnnazare&theme=react-dark)](https://github.com/nageshnnazare/)
+
+<div align="center">
