@@ -32,11 +32,13 @@
 <br />
 
 <div align="center">
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nageshnnazare&layout=compact&theme=gotham&hide_border=true&show_icons=true" />
-<div align="center">
+  
+| [![Nagesh's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nageshnnazare&&layout=compact&theme=dracula&hide_border=true&show_icons=true)](https://github.com/nageshnnazare/) | [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=nageshnnazare&theme=dracula&hide_border=true&date_format=j%20M%5B%20Y%5D)](https://github.com/nageshnnazare/) |
+| :---: | :---: |
+  
+  
+| [![Nagesh's github activity graph](https://activity-graph.herokuapp.com/graph?username=nageshnnazare&theme=dracula&hide_border=true)](https://github.com/nageshnnazare/) |
+| :---: |
 
-<div align="center">
+</div>
 
-[![Nagesh's github activity graph](https://activity-graph.herokuapp.com/graph?username=nageshnnazare&theme=react-dark)](https://github.com/nageshnnazare/)
-
-<div align="center">
