@@ -1,7 +1,7 @@
-<h1 align = "center">  Hello, I am Nagesh ! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="45px"></h1>
+<h1 align = "center">  Hello, I am Nagesh ! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40px" height="40px"></h1>
 
 <p align="center">
-  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Ubuntu+Mono&size=22&center=true&vCenter=true&lines=C%2B%2B+Software+Developer;Linux+System+Programmer;Blockchain+Enthusiast+;Novice+Web+Developer;Open-Source+Community+Fan;Learn+%7C+Unlearn+%7C+Relearn"></a>
+  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Ubuntu+Mono&size=22&center=true&vCenter=true&lines=C/C%2B%2B+Software+Developer;Linux+System+Programmer;Blockchain+Enthusiast+;Novice+Web+Developer;Open-Source+Community+Fan;Learn+%7C+Unlearn+%7C+Relearn"></a>
 </p>
 
 <div align="center" style="text-align=center; background-color:white">
