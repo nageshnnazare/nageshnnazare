@@ -35,14 +35,18 @@
 <br />
 
 <div align="center">
+<!--
 <h3>Nagesh's Github Contributions</h3>
+-->
   
 | [![Nagesh's Contributions](https://github.com/nageshnnazare/nageshnnazare/blob/output/github-contribution-grid-snake.svg)](https://github.com/nageshnnazare/) |
 | :---: |
-  
+
+<!--
 | [![Nagesh's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nageshnnazare&&layout=compact&theme=dracula&hide_border=true&show_icons=true&count_private=true)](https://github.com/nageshnnazare/) | [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=nageshnnazare&theme=dracula&hide_border=true&date_format=j%20M%5B%20Y%5D)](https://github.com/nageshnnazare/) |
 | :---: | :---: |
-
+-->
+  
 </div>
 
 <!--START_SECTION:activity-->
