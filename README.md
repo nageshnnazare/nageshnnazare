@@ -6,6 +6,11 @@
   <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Ubuntu+Mono&size=22&center=true&vCenter=true&lines=C/C%2B%2B+Software+Developer;Linux+System+Programmer;High-Performance+Computing;Open-Source+Community+Fan;Learn+%7C+Unlearn+%7C+Relearn"></a>
   -->
 </p>
+
+<p align="center">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nageshnnazare&theme=tokyonight&show_icons=true&hide_border=true&layout=compact" alt="My GitHub Lang Stats" /> 
+</p>
+
 <!--
 <div align="center" style="text-align=center; background-color:white">
 <!---
