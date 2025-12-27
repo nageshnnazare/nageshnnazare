@@ -27,12 +27,6 @@ jobs:
           GITHUB_USERNAME: ${{ github.repository_owner }}
         run: python scripts/generate_ascii_contrib.py
 
-      - name: Generate Top Stats
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_USERNAME: ${{ github.repository_owner }}
-        run: python scripts/generate_top_stats.py
-
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions"

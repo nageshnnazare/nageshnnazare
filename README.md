@@ -60,18 +60,19 @@
 
 ### 🏆 Contributions
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="github-contribution-grid-snake.svg">
+  </picture>
+</p>
+
 <!-- ASCII_CONTRIBUTION_START -->
 <!-- <p align="center"><img src="./contributions.svg" width="100%" /></p> -->
 
 ```text
-   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
-Sun                                                                               ░
-Mon                                                           ░               ▓ ░  
-Tue                                                         ▒     ░         ▓ ▓ ░  
-Wed                                                         ░ ░ ░         ▒ ▓   ░ ▒
-Thu                                                         ░               ▒ ░   ░
-Fri                                                                         ▒   ▒ ▒
-Sat                                                                             ▓ ▓
+Placeholder
 ```
 <!-- ASCII_CONTRIBUTION_END -->
 
