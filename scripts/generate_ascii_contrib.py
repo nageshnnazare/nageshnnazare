@@ -44,8 +44,8 @@ def get_contributions():
 def generate_ascii(data):
     weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
     
-    # Limit to last 3 months (approx 13 weeks)
-    weeks = weeks[-13:]
+    # Limit to last ~7 months (30 weeks)
+    weeks = weeks[-30:]
     
     # Symbols for different levels of contributions
     # 0, 1-3, 4-6, 7-9, 10+
