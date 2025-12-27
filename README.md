@@ -1,71 +1,64 @@
-<h1 align = "center">  Hello, I am Nagesh ! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40px" height="40px"></h1>
-
-<p align="center">
-    <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Ubuntu+Mono&size=22&center=true&vCenter=true&lines=C/C%2B%2B+Software+Development;Linux+System+Programming;C+%7C+Cuda+%7C+C%2B%2B11/14/17/20;High-Performance+Computing;Machine+Learning;"></a> 
-  <!--
-  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Ubuntu+Mono&size=22&center=true&vCenter=true&lines=C/C%2B%2B+Software+Developer;Linux+System+Programmer;High-Performance+Computing;Open-Source+Community+Fan;Learn+%7C+Unlearn+%7C+Relearn"></a>
-  -->
-</p>
-
-<p align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nageshnnazare&theme=tokyonight&show_icons=true&hide_border=true&layout=compact" alt="My GitHub Lang Stats" /> 
-</p>
-
-<!--
-<div align="center" style="text-align=center; background-color:white">
-<!---
-<a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a>
-<a href="https://www.cplusplus.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cpp" width="40" height="40"/> </a>
-<a href="https://gcc.gnu.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gcc/gcc-original.svg" alt="cpp" width="40" height="40"/> </a>
-<a href="https://cmake.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cmake/cmake-original.svg" alt="cpp" width="40" height="40"/> </a>
-<a href="https://www.python.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-<a href="https://www.rust-lang.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg" alt="rust" width="40" height="40"/> </a>
-<a href="https://www.gnu.org/software/bash/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="40" height="40"/> </a>
-<a href="https://www.linux.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="bash" width="40" height="40"/> </a>
-<a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
-<a href="https://www.vim.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vim/vim-original.svg" alt="vim" width="40" height="40"/> </a>
---->
-<!---
-<a href="https://www.w3.org/html/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="html5" width="40" height="40"/> </a>
-<a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="css3" width="40" height="40"/> </a>
-<a href="https://sass-lang.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-icon.svg" alt="sass" width="40" height="40"/> </a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
-<a href="https://expressjs.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="nodejs" width="40" height="40"/> </a>
-<a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" alt="nodejs" width="40" height="40"/> </a> 
-<a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="40" height="40"/> </a>
-<a href="https://www.npmjs.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/npm/npm-original-wordmark.svg" alt="npm" width="40" height="40"/> </a>
-<!---  
-<a href="https://www.docker.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/docker/docker-plain.svg" alt="npm" width="40" height="40"/> </a>
-<a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
-<a href="https://code.visualstudio.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/> </a>
-<a href="https://www.mathworks.com/products/matlab.html" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/matlab/matlab-original.svg" alt="vscode" width="40" height="40"/> </a>
--->
-<!--
-</div>
-<br />
-
-<!--
 <div align="center">
-  -->
-<!--
-<h3>Nagesh's Github Contributions</h3>
--->
-<!--  
-| [![Nagesh's Contributions](https://github.com/nageshnnazare/nageshnnazare/blob/output/github-contribution-grid-snake.svg)](https://github.com/nageshnnazare/) |
-| :---: |
--->
-<!--
-![](./profile-3d-contrib/profile-night-green.svg)
--->
-
-<!--
-| [![Nagesh's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nageshnnazare&&layout=compact&theme=dracula&hide_border=true&show_icons=true&count_private=true)](https://github.com/nageshnnazare/) | [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=nageshnnazare&theme=dracula&hide_border=true&date_format=j%20M%5B%20Y%5D)](https://github.com/nageshnnazare/) |
-| :---: | :---: |
--->
-
-<!--
+  <h1 align="center">Hi there, I'm Nagesh! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35" height="35"></h1>
+  
+  <a href="https://github.com/DenverCoder1/readme-typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=7AA2F7&center=true&vCenter=true&width=500&lines=C%2FC%2B%2B+Software+Developer;Linux+System+Programmer;High-Performance+Computing;Machine+Learning+Enthusiast;Always+Learning" alt="Typing SVG" />
+  </a>
 </div>
--->
-<!--START_SECTION:activity-->
 
-<!--END_SECTION:activity-->
+<div align="center">
+<p>
+  <a href="https://in.linkedin.com/in/nagesh-n-nazare">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-7AA2F7?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+</p>
+</div>
+
+---
+
+### 🛠️ Languages and Tools
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+  <img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+</div>
+
+---
+
+### 📚 Featured Repos
+
+|  |  |  |  | |
+| :---: | :---: | :---: | :---: | :---: |
+| [**cpp**](https://github.com/nageshnnazare/cpp-know-hows)<br>c++ notes | [**cuda**](https://github.com/nageshnnazare/cuda-know-hows)<br>gpu prgm | [**python**](https://github.com/nageshnnazare/python-know-hows)<br>python tut | [**bash**](https://github.com/nageshnnazare/bash-know-hows)<br>shell script | [**asm**](https://github.com/nageshnnazare/asm-know-hows)<br>assembly |
+|[**pytorch**](https://github.com/nageshnnazare/pytorch-know-hows)<br>pytorch notebooks | [**ml**](https://github.com/nageshnnazare/ml-know-hows)<br>machine learning | [**raylib**](https://github.com/nageshnnazare/raylib-know-hows)<br>graphics | [**ncurses**](https://github.com/nageshnnazare/ncurses-know-hows)<br>tui | [**tbb**](https://github.com/nageshnnazare/tbb-know-hows)<br>threading | 
+| [**design-patterns**](https://github.com/nageshnnazare/design-patterns-know-hows)<br>cpp architecture | [**lld**](https://github.com/nageshnnazare/lld-know-hows)<br>low level design | [**os**](https://github.com/nageshnnazare/os-know-hows)<br>operating system | [**dsa**](https://github.com/nageshnnazare/dsa-know-hows)<br>data structures | [**pthread**](https://github.com/nageshnnazare/unix_threads_with_pthread_lib)<br>unix threads |
+
+---
+
+### 🏆 Contributions
+
+<!-- <div align="center">
+<img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Contributions" width="100%" />
+
+</div>
+
+--- -->
+
+```text
+<!-- ASCII_CONTRIBUTION_START -->
+(Generating your ASCII contribution graph... it will appear here shortly!)
+<!-- ASCII_CONTRIBUTION_END -->
+```
+
+---
+
+<!-- <div align="center">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=nageshnnazare&layout=compact&theme=dark&show_icons=true&hide_border=true" alt="Top Languages" />
+</div> -->
+
+---
