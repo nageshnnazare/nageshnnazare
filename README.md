@@ -72,7 +72,7 @@
 <!-- <p align="center"><img src="./contributions.svg" width="100%" /></p> -->
 
 ```text
-Placeholder
+(Generating your ASCII contribution graph... it will appear here shortly!)
 ```
 <!-- ASCII_CONTRIBUTION_END -->
 
