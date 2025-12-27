@@ -32,11 +32,29 @@
 
 ### 📚 Featured Repos
 
-|  |  |  |  | |
-| :---: | :---: | :---: | :---: | :---: |
-| [**cpp**](https://github.com/nageshnnazare/cpp-know-hows)<br>c++ notes | [**cuda**](https://github.com/nageshnnazare/cuda-know-hows)<br>gpu prgm | [**python**](https://github.com/nageshnnazare/python-know-hows)<br>python tut | [**bash**](https://github.com/nageshnnazare/bash-know-hows)<br>shell script | [**asm**](https://github.com/nageshnnazare/asm-know-hows)<br>assembly |
-|[**pytorch**](https://github.com/nageshnnazare/pytorch-know-hows)<br>pytorch notebooks | [**ml**](https://github.com/nageshnnazare/ml-know-hows)<br>machine learning | [**raylib**](https://github.com/nageshnnazare/raylib-know-hows)<br>graphics | [**ncurses**](https://github.com/nageshnnazare/ncurses-know-hows)<br>tui | [**tbb**](https://github.com/nageshnnazare/tbb-know-hows)<br>threading | 
-| [**design-patterns**](https://github.com/nageshnnazare/design-patterns-know-hows)<br>cpp architecture | [**lld**](https://github.com/nageshnnazare/lld-know-hows)<br>low level design | [**os**](https://github.com/nageshnnazare/os-know-hows)<br>operating system | [**dsa**](https://github.com/nageshnnazare/dsa-know-hows)<br>data structures | [**pthread**](https://github.com/nageshnnazare/unix_threads_with_pthread_lib)<br>unix threads |
+<table align="center">
+  <tr>
+    <td align="center"><a href="https://github.com/nageshnnazare/cpp-know-hows"><b>cpp</b></a><br>c++ notes</td>
+    <td align="center"><a href="https://github.com/nageshnnazare/cuda-know-hows"><b>cuda</b></a><br>gpu prgm</td>
+    <td align="center"><a href="https://github.com/nageshnnazare/python-know-hows"><b>python</b></a><br>python tut</td>
+    <td align="center"><a href="https://github.com/nageshnnazare/bash-know-hows"><b>bash</b></a><br>shell script</td>
+    <td align="center"><a href="https://github.com/nageshnnazare/asm-know-hows"><b>asm</b></a><br>assembly</td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/nageshnnazare/pytorch-know-hows"><b>pytorch</b></a><br>pytorch notebooks</td>
+    <td align="center"><a href="https://github.com/nageshnnazare/ml-know-hows"><b>ml</b></a><br>machine learning</td>
+    <td align="center"><a href="https://github.com/nageshnnazare/raylib-know-hows"><b>raylib</b></a><br>graphics</td>
+    <td align="center"><a href="https://github.com/nageshnnazare/ncurses-know-hows"><b>ncurses</b></a><br>tui</td>
+    <td align="center"><a href="https://github.com/nageshnnazare/tbb-know-hows"><b>tbb</b></a><br>threading</td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/nageshnnazare/design-patterns-know-hows"><b>design-patterns</b></a><br>cpp architecture</td>
+    <td align="center"><a href="https://github.com/nageshnnazare/lld-know-hows"><b>lld</b></a><br>low level design</td>
+    <td align="center"><a href="https://github.com/nageshnnazare/os-know-hows"><b>os</b></a><br>operating system</td>
+    <td align="center"><a href="https://github.com/nageshnnazare/dsa-know-hows"><b>dsa</b></a><br>data structures</td>
+    <td align="center"><a href="https://github.com/nageshnnazare/unix_threads_with_pthread_lib"><b>pthread</b></a><br>unix threads</td>
+  </tr>
+</table>
 
 ---
 
@@ -60,5 +78,3 @@
 <!-- <div align="center">
   <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=nageshnnazare&layout=compact&theme=dark&show_icons=true&hide_border=true" alt="Top Languages" />
 </div> -->
-
----
