@@ -60,13 +60,6 @@
 
 ### 🏆 Contributions
 
-<!-- <div align="center">
-<img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Contributions" width="100%" />
-
-</div>
-
---- -->
-
 ```text
 <!-- ASCII_CONTRIBUTION_START -->
 (Generating your ASCII contribution graph... it will appear here shortly!)
@@ -74,6 +67,13 @@
 ```
 
 ---
+
+<!-- <div align="center">
+<img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Contributions" width="100%" />
+
+</div>
+
+--- -->
 
 <!-- <div align="center">
   <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=nageshnnazare&layout=compact&theme=dark&show_icons=true&hide_border=true" alt="Top Languages" />
