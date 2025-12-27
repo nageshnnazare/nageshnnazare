@@ -71,9 +71,9 @@
 <!-- ASCII_CONTRIBUTION_START -->
 <!-- <p align="center"><img src="./contributions.svg" width="100%" /></p> -->
 
-```text
+<!-- ```text
 (Generating your ASCII contribution graph... it will appear here shortly!)
-```
+``` -->
 <!-- ASCII_CONTRIBUTION_END -->
 
 ---
