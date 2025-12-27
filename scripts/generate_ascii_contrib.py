@@ -44,11 +44,14 @@ def get_contributions():
 def generate_ascii(data):
     weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
     
+    # Limit to last 3 months (approx 13 weeks)
+    weeks = weeks[-13:]
+    
     # Symbols for different levels of contributions
     # 0, 1-3, 4-6, 7-9, 10+
     symbols = [" ", "░", "▒", "▓", "█"]
     
-    # We want a 7x52 or 7x53 grid
+    # Grid for 7 days x 13 weeks
     grid = [[" " for _ in range(len(weeks))] for _ in range(7)]
     
     for w_idx, week in enumerate(weeks):
