@@ -61,15 +61,10 @@
 ### 🏆 Contributions
 
 <!-- ASCII_CONTRIBUTION_START -->
+<p align="center"><img src="./contributions.svg" width="100%" /></p>
+
 ```text
-   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
-Sun                                                           ░
-Mon                                       ░               ▓ ░  
-Tue                                     ▒     ░         ▓ ▓ ░  
-Wed                                     ░ ░ ░         ▒ ▓   ░ ▒
-Thu                                     ░               ▒ ░   ░
-Fri                                                     ▒   ▒ ▒
-Sat                                                         ▓ ▓
+(Generating your ASCII contribution graph... it will appear here shortly!)
 ```
 <!-- ASCII_CONTRIBUTION_END -->
 
