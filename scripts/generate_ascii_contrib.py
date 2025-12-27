@@ -1,21 +1,20 @@
-import os
 import requests
 import json
+import os
 from datetime import datetime
 
 TOKEN = os.getenv("GITHUB_TOKEN")
-USERNAME = os.getenv("GITHUB_USERNAME")
+USERNAME = os.getenv("GITHUB_USERNAME", "nageshnnazare")
 
 query = """
 query($username: String!) {
   user(login: $username) {
     contributionsCollection {
       contributionCalendar {
-        totalContributions
         weeks {
           contributionDays {
-            contributionCount
             date
+            contributionCount
           }
         }
       }
@@ -43,38 +42,22 @@ def get_contributions():
 
 def generate_ascii(data):
     weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
-    
     # Limit to last ~9 months (40 weeks)
     weeks = weeks[-40:]
-    
-    # Symbols for different levels of contributions
     symbols = [" ", "░", "▒", "▓", "█"]
-    
-    # Grid for 7 days x 40 weeks
     grid = [[" " for _ in range(len(weeks))] for _ in range(7)]
     
     for w_idx, week in enumerate(weeks):
         for day in week["contributionDays"]:
-            d_idx = datetime.strptime(day["date"], "%Y-%m-%d").weekday()
-            # GitHub calendar starts on Sunday (index 0 usually in their API, 
-            # but Python's weekday() is Mon=0, Sun=6. 
-            # Let's adjust to Sun=0, Mon=1... Sat=6)
-            d_idx = (d_idx + 1) % 7 
-            
+            d_idx = (datetime.strptime(day["date"], "%Y-%m-%d").weekday() + 1) % 7 
             count = day["contributionCount"]
-            if count == 0:
-                s = symbols[0]
-            elif count < 3:
-                s = symbols[1]
-            elif count < 6:
-                s = symbols[2]
-            elif count < 10:
-                s = symbols[3]
-            else:
-                s = symbols[4]
+            if count == 0: s = symbols[0]
+            elif count < 3: s = symbols[1]
+            elif count < 6: s = symbols[2]
+            elif count < 10: s = symbols[3]
+            else: s = symbols[4]
             grid[d_idx][w_idx] = s
 
-    # Convert grid to string
     days_labels = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     output = "   " + " ".join([str(i%10) for i in range(len(weeks))]) + "\n"
     for i, row in enumerate(grid):
@@ -83,34 +66,85 @@ def generate_ascii(data):
     return output
 
 def generate_svg(ascii_art):
-    tux = [
-        "       .--.      ",
-        "      |o_o |     ",
-        "      |:_/ |     ",
-        "     //   \\ \\    ",
-        "    (|     | )   ",
-        "   /'\\_   _/` \\  ",
-        "   \\___)=(___/   "
-    ]
-    
     # Escape for XML
     safe_ascii = ascii_art.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    contrib_lines = safe_ascii.split("\n")
+    lines = safe_ascii.split("\n")
     
-    # Merge Tux (left) and Contrib (right)
-    # Tux has 7 lines, Contrib usually has 8-9 including labels
-    max_lines = max(len(tux), len(contrib_lines))
-    merged_lines = []
-    for i in range(max_lines):
-        tux_part = tux[i] if i < len(tux) else " " * 17
-        contrib_part = contrib_lines[i] if i < len(contrib_lines) else ""
-        merged_lines.append(tux_part + "  " + contrib_part)
+    # Calculate dimensions for a clean look with padding
+    width = 850
+    line_height = 18.5
+    height = 280
     
-    # Calculate dimensions
-    width = 1000
-    line_height = 20
-    height = len(merged_lines) * line_height + 60
+    # Snakes & Ladders Board Elements
+    ladders = [
+        (4, 6, 6, 2),   # (w_start, d_start, w_end, d_end)
+        (15, 5, 17, 1),
+        (28, 6, 30, 0)
+    ]
+    snakes = [
+        (10, 0, 12, 5),
+        (22, 1, 24, 6),
+        (36, 1, 38, 5)
+    ]
     
+    start_x = 56
+    start_y = 88
+    col_w = 18.2
+    row_h = 16.8
+    
+    def get_coords(w, d):
+        return start_x + (w * col_w), start_y + (d * row_h)
+
+    # SVG Elements for Board
+    board_elements = ""
+    # Draw Ladders (Blue)
+    for w1, d1, w2, d2 in ladders:
+        x1, y1 = get_coords(w1, d1)
+        x2, y2 = get_coords(w2, d2)
+        board_elements += f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#7AA2F7" stroke-width="4" stroke-linecap="round" opacity="0.4" />\n'
+        board_elements += f'<line x1="{x1-4}" y1="{y1}" x2="{x2-4}" y2="{y2}" stroke="#7AA2F7" stroke-width="2" opacity="0.3" />\n'
+        board_elements += f'<line x1="{x1+4}" y1="{y1}" x2="{x2+4}" y2="{y2}" stroke="#7AA2F7" stroke-width="2" opacity="0.3" />\n'
+
+    # Draw Snakes (Red/Orange)
+    for w1, d1, w2, d2 in snakes:
+        x1, y1 = get_coords(w1, d1)
+        x2, y2 = get_coords(w2, d2)
+        ctrl_x = (x1 + x2) / 2 + 30
+        ctrl_y = (y1 + y2) / 2
+        board_elements += f'<path d="M{x1} {y1} Q{ctrl_x} {ctrl_y} {x2} {y2}" stroke="#F7768E" stroke-width="6" fill="none" opacity="0.4" stroke-dasharray="4,4" />\n'
+
+    # Game Path Logic
+    game_path_points = []
+    # Current logical position (w, d)
+    curr_w, curr_d = 0, 0
+    path_str = f"M{start_x} {start_y} "
+    
+    # Simulate 100 steps of game
+    for _ in range(120):
+        # Move forward
+        curr_d += 1
+        if curr_d > 6:
+            curr_d = 0
+            curr_w += 1
+        if curr_w >= 40: break
+        
+        gx, gy = get_coords(curr_w, curr_d)
+        path_str += f"L{gx} {gy} "
+        
+        # Check for Ladders
+        for w1, d1, w2, d2 in ladders:
+            if curr_w == w1 and curr_d == d1:
+                curr_w, curr_d = w2, d2
+                nx, ny = get_coords(curr_w, curr_d)
+                path_str += f"L{nx} {ny} "
+        
+        # Check for Snakes
+        for w1, d1, w2, d2 in snakes:
+            if curr_w == w1 and curr_d == d1:
+                curr_w, curr_d = w2, d2
+                nx, ny = get_coords(curr_w, curr_d)
+                path_str += f"L{nx} {ny} "
+
     svg_template = f"""<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none" xmlns="http://www.w3.org/2000/svg">
     <style>
         .terminal {{
@@ -123,99 +157,70 @@ def generate_svg(ascii_art):
         .bg {{ fill: #1a1b26; rx: 10; }}
         .header {{ fill: #24283b; rx: 10 10 0 0; }}
         .label {{ fill: #565f89; font-family: monospace; font-size: 12px; }}
+        .player {{ filter: drop-shadow(0 0 5px #FFFFFF); }}
     </style>
     
     <rect width="{width}" height="{height}" class="bg" />
-    
-    <!-- Moving Scanline -->
-    <rect width="{width}" height="4" fill="#7AA2F7" opacity="0.05">
-        <animateTransform attributeName="transform" type="translate" from="0 -10" to="0 {height}" dur="7s" repeatCount="indefinite" />
-    </rect>
-    
-    <!-- Static Header -->
     <rect width="{width}" height="30" class="header" />
     <circle cx="20" cy="15" r="5" fill="#F7768E" />
     <circle cx="40" cy="15" r="5" fill="#E0AF68" />
     <circle cx="60" cy="15" r="5" fill="#9ECE6A" />
-    <text x="80" y="20" class="label">nagesh@hpc:~/contributions</text>
+    <text x="80" y="20" class="label">nagesh@hpc:~/snakes-n-ladders --play</text>
     
     <g>
         <animate attributeName="opacity" values="0.97;1;0.98;1;0.97" dur="0.1s" repeatCount="indefinite" />
-        
-        <text x="20" y="50" class="terminal">
+        <text x="20" y="55" class="terminal">
 """
-    for i, line in enumerate(merged_lines):
+    for line in lines:
         svg_template += f'            <tspan x="20" dy="1.2em">{line}</tspan>\n'
         
     svg_template += f"""        </text>
         
-        <!-- Typing Cursor -->
-        <rect x="20" y="55" width="8" height="15" fill="#7AA2F7">
-            <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite" />
-            <animate attributeName="x" from="200" to="800" dur="10s" repeatCount="indefinite" />
-            <animate attributeName="y" values="55;{height-20}" dur="60s" repeatCount="indefinite" />
-        </rect>
+        <!-- Board Elements -->
+        {board_elements}
+
+        <!-- Player 1 (Fast) -->
+        <circle r="6" fill="#FFFFFF" class="player">
+            <animateMotion dur="20s" repeatCount="indefinite" path="{path_str}" />
+            <animate attributeName="fill" values="#FFFFFF;#9ECE6A;#FFFFFF" dur="2s" repeatCount="indefinite" />
+        </circle>
+
+        <!-- Player 2 (Ghost) -->
+        <circle r="4" fill="#7AA2F7" opacity="0.4">
+            <animateMotion dur="25s" repeatCount="indefinite" path="{path_str}" rotate="auto" />
+        </circle>
     </g>
 </svg>"""
     
     with os.fdopen(os.open("contributions.svg", os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o644), "w", encoding="utf-8") as f:
         f.write(svg_template)
-    print("contributions.svg generated.")
 
 def update_readme(ascii_art):
-    # Search in current and parent dirs for local testing
     readme_path = "README.md"
     if not os.path.exists(readme_path):
         readme_path = os.path.join(os.path.dirname(__file__), "..", "README.md")
     
-    if not os.path.exists(readme_path):
-        print(f"README.md not found at {readme_path}.")
-        return
+    if not os.path.exists(readme_path): return
 
     with open(readme_path, "r", encoding="utf-8") as f:
         content = f.read()
 
     start_tag = "<!-- ASCII_CONTRIBUTION_START -->"
     end_tag = "<!-- ASCII_CONTRIBUTION_END -->"
-    
     start_idx = content.find(start_tag)
     end_idx = content.find(end_tag)
 
     if start_idx != -1 and end_idx != -1:
-        # Show both the animated SVG and the raw text log
         replacement = f'\n<p align="center"><img src="./contributions.svg" width="100%" /></p>\n\n```text\n{ascii_art}```\n'
-        new_content = (
-            content[:start_idx + len(start_tag)] + 
-            replacement + 
-            content[end_idx:]
-        )
+        new_content = content[:start_idx + len(start_tag)] + replacement + content[end_idx:]
         with open(readme_path, "w", encoding="utf-8") as f:
             f.write(new_content)
-        print(f"Successfully updated {readme_path} with ASCII contribution graph and SVG.")
-    else:
-        print("Placeholders not found in README.md.")
-
-# Mock data for testing
-MOCK_DATA = {
-    "data": {
-        "user": {
-            "contributionsCollection": {
-                "contributionCalendar": {
-                    "weeks": [
-                        {"contributionDays": [{"date": f"2023-01-{i:02d}", "contributionCount": i % 15} for i in range(1, 8)]}
-                        for _ in range(53)
-                    ]
-                }
-            }
-        }
-    }
-}
 
 if __name__ == "__main__":
     try:
         if not TOKEN or not USERNAME:
-            print("No GITHUB_TOKEN or GITHUB_USERNAME found. Running in MOCK/TEST mode...")
-            data = MOCK_DATA
+            print("No token/username. Using MOCK data.")
+            data = {"data": {"user": {"contributionsCollection": {"contributionCalendar": {"weeks": [{"contributionDays": [{"date": f"2023-01-{i:02d}", "contributionCount": i % 15} for i in range(1, 8)]} for _ in range(53)]}}}}}
         else:
             data = get_contributions()
             
@@ -224,14 +229,10 @@ if __name__ == "__main__":
         # Write to a txt file as well for reference
         with open("CONTRIBUTIONS.txt", "w", encoding="utf-8") as f:
             f.write(ascii_art)
-        
-        # Generate SVG
+
         generate_svg(ascii_art)
-        
-        # Inject into README
         update_readme(ascii_art)
-        
-        print("ASCII contribution graph process complete.")
+        print("Snake contribution graph complete.")
     except Exception as e:
         print(f"Error: {e}")
         import traceback
