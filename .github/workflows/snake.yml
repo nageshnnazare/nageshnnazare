@@ -31,6 +31,9 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add -A
+          git stash
           git pull --rebase
+          git stash pop || echo "No stash to pop"
+          git add -A
           git commit -m "chore: update snake game contribution visualization" || exit 0
           git push
