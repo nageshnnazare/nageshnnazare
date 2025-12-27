@@ -27,10 +27,19 @@ query($username: String!) {
 def get_contributions():
     url = "https://api.github.com/graphql"
     headers = {"Authorization": f"bearer {TOKEN}"}
-    response = requests.post(url, json={"query": query, "variables": {"username": USERNAME}}, headers=headers)
+    payload = {"query": query, "variables": {"username": USERNAME}}
+    
+    print(f"Fetching contributions for user: {USERNAME}")
+    response = requests.post(url, json=payload, headers=headers)
+    
     if response.status_code != 200:
-        raise Exception(f"Query failed: {response.status_code}. {response.text}")
-    return response.json()
+        raise Exception(f"Query failed with status {response.status_code}: {response.text}")
+    
+    res_json = response.json()
+    if "errors" in res_json:
+        raise Exception(f"GraphQL Errors: {json.dumps(res_json['errors'], indent=2)}")
+        
+    return res_json
 
 def generate_ascii(data):
     weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
@@ -93,7 +102,7 @@ def update_readme(ascii_art):
     if start_idx != -1 and end_idx != -1:
         new_content = (
             content[:start_idx + len(start_tag)] + 
-            "\n" + ascii_art + "\n" + 
+            "\n```text\n" + ascii_art + "```\n" + 
             content[end_idx:]
         )
         with open(readme_path, "w", encoding="utf-8") as f:

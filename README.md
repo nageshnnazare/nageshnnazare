@@ -60,11 +60,11 @@
 
 ### 🏆 Contributions
 
-```text
 <!-- ASCII_CONTRIBUTION_START -->
+```text
 (Generating your ASCII contribution graph... it will appear here shortly!)
-<!-- ASCII_CONTRIBUTION_END -->
 ```
+<!-- ASCII_CONTRIBUTION_END -->
 
 ---
 
