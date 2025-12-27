@@ -28,29 +28,29 @@
 
 ### 📚 Featured Repos
 
-<table align="center" cellpadding="10" cellspacing="0">
-  <tr>
-    <td align="center"><a href="https://github.com/nageshnnazare/cpp-know-hows"><img src="https://img.shields.io/badge/-C%2B%2B-1A237E?style=for-the-badge&logo=c%2B%2B&logoColor=white" /><br><sub><b>Modern C++ Notes</b></sub></a></td>
-    <td align="center"><a href="https://github.com/nageshnnazare/cuda-know-hows"><img src="https://img.shields.io/badge/-CUDA-1B5E20?style=for-the-badge&logo=nvidia&logoColor=white" /><br><sub><b>GPU Programming</b></sub></a></td>
-    <td align="center"><a href="https://github.com/nageshnnazare/python-know-hows"><img src="https://img.shields.io/badge/-Python-0D47A1?style=for-the-badge&logo=python&logoColor=white" /><br><sub><b>Python Tutorials</b></sub></a></td>
-    <td align="center"><a href="https://github.com/nageshnnazare/bash-know-hows"><img src="https://img.shields.io/badge/-Bash-212121?style=for-the-badge&logo=gnu-bash&logoColor=white" /><br><sub><b>Shell Scripting</b></sub></a></td>
-    <td align="center"><a href="https://github.com/nageshnnazare/asm-know-hows"><img src="https://img.shields.io/badge/-Asm-BF360C?style=for-the-badge&logo=intel&logoColor=white" /><br><sub><b>Low-Level Assembly</b></sub></a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/nageshnnazare/pytorch-know-hows"><img src="https://img.shields.io/badge/-PyTorch-880E4F?style=for-the-badge&logo=pytorch&logoColor=white" /><br><sub><b>Pytorch Notebooks</b></sub></a></td>
-    <td align="center"><a href="https://github.com/nageshnnazare/ml-know-hows"><img src="https://img.shields.io/badge/-ML-E65100?style=for-the-badge&logo=scikit-learn&logoColor=white" /><br><sub><b>Machine Learning</b></sub></a></td>
-    <td align="center"><a href="https://github.com/nageshnnazare/raylib-know-hows"><img src="https://img.shields.io/badge/-Raylib-01579B?style=for-the-badge&logo=opengl&logoColor=white" /><br><sub><b>raylib Tutorial</b></sub></a></td>
-    <td align="center"><a href="https://github.com/nageshnnazare/ncurses-know-hows"><img src="https://img.shields.io/badge/-NCurses-006064?style=for-the-badge&logo=gnometerminal&logoColor=white" /><br><sub><b>ncurses Tutorial</b></sub></a></td>
-    <td align="center"><a href="https://github.com/nageshnnazare/tbb-know-hows"><img src="https://img.shields.io/badge/-TBB-263238?style=for-the-badge&logo=intel&logoColor=white" /><br><sub><b>tbb Threading Library</b></sub></a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/nageshnnazare/design-patterns-know-hows"><img src="https://img.shields.io/badge/-OOPS-4A148C?style=for-the-badge&logo=abstract&logoColor=white" /><br><sub><b>Design Patterns</b></sub></a></td>
-    <td align="center"><a href="https://github.com/nageshnnazare/lld-know-hows"><img src="https://img.shields.io/badge/-LLD-311B92?style=for-the-badge&logo=blueprint&logoColor=white" /><br><sub><b>System Design</b></sub></a></td>
-    <td align="center"><a href="https://github.com/nageshnnazare/os-know-hows"><img src="https://img.shields.io/badge/-OS-B71C1C?style=for-the-badge&logo=linux&logoColor=white" /><br><sub><b>Operating Systems</b></sub></a></td>
-    <td align="center"><a href="https://github.com/nageshnnazare/dsa-know-hows"><img src="https://img.shields.io/badge/-DSA-004D40?style=for-the-badge&logo=codersrank&logoColor=white" /><br><sub><b>Data Structures</b></sub></a></td>
-    <td align="center"><a href="https://github.com/nageshnnazare/unix_threads_with_pthread_lib"><img src="https://img.shields.io/badge/-Pthread-3E2723?style=for-the-badge&logo=linux&logoColor=white" /><br><sub><b>Unix Threads</b></sub></a></td>
-  </tr>
-</table>
+<div align="center">
+  <p>
+    <a href="https://github.com/nageshnnazare/cpp-know-hows"><img src="https://img.shields.io/badge/Modern_C++_Notes-1A237E?style=for-the-badge&logo=cplusplus&logoColor=white" /></a>
+    <a href="https://github.com/nageshnnazare/cuda-know-hows"><img src="https://img.shields.io/badge/GPU_Programming-1B5E20?style=for-the-badge&logo=nvidia&logoColor=white" /></a>
+    <a href="https://github.com/nageshnnazare/python-know-hows"><img src="https://img.shields.io/badge/Python_Tutorials-0D47A1?style=for-the-badge&logo=python&logoColor=white" /></a>
+    <a href="https://github.com/nageshnnazare/bash-know-hows"><img src="https://img.shields.io/badge/Shell_Scripting-212121?style=for-the-badge&logo=gnubash&logoColor=white" /></a>
+    <a href="https://github.com/nageshnnazare/asm-know-hows"><img src="https://img.shields.io/badge/Low_Level_Assembly-BF360C?style=for-the-badge&logo=intel&logoColor=white" /></a>
+  </p>
+  <p>
+    <a href="https://github.com/nageshnnazare/pytorch-know-hows"><img src="https://img.shields.io/badge/Pytorch_Notebooks-880E4F?style=for-the-badge&logo=pytorch&logoColor=white" /></a>
+    <a href="https://github.com/nageshnnazare/ml-know-hows"><img src="https://img.shields.io/badge/Machine_Learning-E65100?style=for-the-badge&logo=scikitlearn&logoColor=white" /></a>
+    <a href="https://github.com/nageshnnazare/raylib-know-hows"><img src="https://img.shields.io/badge/raylib_Tutorial-01579B?style=for-the-badge&logo=opengl&logoColor=white" /></a>
+    <a href="https://github.com/nageshnnazare/ncurses-know-hows"><img src="https://img.shields.io/badge/ncurses_Tutorial-006064?style=for-the-badge&logo=gnometerminal&logoColor=white" /></a>
+    <a href="https://github.com/nageshnnazare/tbb-know-hows"><img src="https://img.shields.io/badge/tbb_Threading_Library-263238?style=for-the-badge&logo=intel&logoColor=white" /></a>
+  </p>
+  <p>
+    <a href="https://github.com/nageshnnazare/design-patterns-know-hows"><img src="https://img.shields.io/badge/Design_Patterns-4A148C?style=for-the-badge&logo=abstract&logoColor=white" /></a>
+    <a href="https://github.com/nageshnnazare/lld-know-hows"><img src="https://img.shields.io/badge/System_Design-311B92?style=for-the-badge&logo=blueprint&logoColor=white" /></a>
+    <a href="https://github.com/nageshnnazare/os-know-hows"><img src="https://img.shields.io/badge/Operating_Systems-B71C1C?style=for-the-badge&logo=linux&logoColor=white" /></a>
+    <a href="https://github.com/nageshnnazare/dsa-know-hows"><img src="https://img.shields.io/badge/Data_Structures-004D40?style=for-the-badge&logo=codersrank&logoColor=white" /></a>
+    <a href="https://github.com/nageshnnazare/unix_threads_with_pthread_lib"><img src="https://img.shields.io/badge/Unix_Threads-3E2723?style=for-the-badge&logo=linux&logoColor=white" /></a>
+  </p>
+</div>
 
 ---
 
