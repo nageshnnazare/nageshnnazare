@@ -1,9 +1,7 @@
 <div align="center">
   <h1 align="center">Hi there, I'm Nagesh! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35" height="35"></h1>
-  
-  <a href="https://github.com/DenverCoder1/readme-typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=7AA2F7&center=true&vCenter=true&width=500&lines=C%2FC%2B%2B+Software+Development;Linux+System+Programming;High-Performance+Computing;Machine+Learning;Graphics+Programming" alt="Typing SVG" />
-  </a>
+
+ <p> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=7AA2F7&center=true&vCenter=true&width=500&lines=C%2FC%2B%2B+Software+Development;Linux+System+Programming;High-Performance+Computing;Machine+Learning;Graphics+Programming" alt="Typing SVG" /> </p>
 </div>
 
 <div align="center">
@@ -15,7 +13,7 @@
   <a href="https://scholar.google.com/citations?user=KDOJ2IAAAAAJ&hl=en">
     <img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=Google%20Scholar&logoColor=white" alt="GoogleScholar" />
   </a>
-    <a href="https://orcid.org/0000-0003-1101-7599">
+  <a href="https://orcid.org/0000-0003-1101-7599">
     <img src="https://img.shields.io/badge/ORCiD-78A500?style=for-the-badge&logo=origin&logoColor=fff" alt="ORCiD" />
   </a>
 </p>
