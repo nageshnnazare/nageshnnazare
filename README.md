@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=Google%20Scholar&logoColor=white" alt="GoogleScholar" />
   </a>
   <a href="https://orcid.org/0000-0003-1101-7599">
-    <img src="https://img.shields.io/badge/ORCiD-78A500?style=for-the-badge&logo=origin&logoColor=fff" alt="ORCiD" />
+    <img src="https://img.shields.io/badge/ORCiD-78A500?style=for-the-badge&logo=ORCID&logoColor=fff" alt="ORCiD" />
   </a>
 </p>
 </div>
