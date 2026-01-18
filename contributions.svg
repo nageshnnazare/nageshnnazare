@@ -39,13 +39,13 @@
     <g>
         <text x="20" y="55" class="terminal">
             <tspan x="20" dy="1.2em">   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9</tspan>
-            <tspan x="20" dy="1.2em">Sun                                                                         ░ ▒ ▒  </tspan>
-            <tspan x="20" dy="1.2em">Mon                                                     ░               ▓ ░   ░ ▒  </tspan>
-            <tspan x="20" dy="1.2em">Tue                                                   ▒     ░         ▓ ▓ ░   ▒   ░</tspan>
-            <tspan x="20" dy="1.2em">Wed                                                   ░ ░ ░         ▒ ▓   ░ ▒ ▓ ░  </tspan>
-            <tspan x="20" dy="1.2em">Thu                                                   ░               ▒ ░   ░ █   ░</tspan>
-            <tspan x="20" dy="1.2em">Fri                                                                   ▒   ▒ ▒ ░    </tspan>
-            <tspan x="20" dy="1.2em">Sat                                                                       ▓ █ ░    </tspan>
+            <tspan x="20" dy="1.2em">Sun                                                                       ░ ▒ ▒    </tspan>
+            <tspan x="20" dy="1.2em">Mon                                                   ░               ▓ ░   ░ ▒    </tspan>
+            <tspan x="20" dy="1.2em">Tue                                                 ▒     ░         ▓ ▓ ░   ▒   ░  </tspan>
+            <tspan x="20" dy="1.2em">Wed                                                 ░ ░ ░         ▒ ▓   ░ ▒ ▓ ░    </tspan>
+            <tspan x="20" dy="1.2em">Thu                                                 ░               ▒ ░   ░ █   ░  </tspan>
+            <tspan x="20" dy="1.2em">Fri                                                                 ▒   ▒ ▒ ░      </tspan>
+            <tspan x="20" dy="1.2em">Sat                                                                     ▓ █ ░      </tspan>
             <tspan x="20" dy="1.2em"></tspan>
         </text>
         
