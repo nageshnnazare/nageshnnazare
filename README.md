@@ -1,7 +1,7 @@
 <div align="center">
   <!-- <h1 align="center">Hi there, I'm Nagesh! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35" height="35"></h1> -->
 
- <p> <img src="./asset/banner_hi.png" alt="banner" width="100%" > </p>
+ <p> <img src="./asset/banner_none.png" alt="banner" width="100%" > </p>
 
  <p> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=7AA2F7&center=true&vCenter=true&width=500&lines=C%2FC%2B%2B+Software+Development;Linux+System+Programming;High-Performance+Computing;Machine+Learning;Graphics+Programming" alt="Typing SVG" /> </p>
 </div>
