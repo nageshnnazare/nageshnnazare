@@ -28,8 +28,19 @@
   <img src="https://img.shields.io/badge/-CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
   <img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/-Shell_-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 </div>
+
+---
+
+### 🏆 Contributions
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="github-contribution-grid-snake.svg">
+  </picture>
+</p>
 
 ---
 
@@ -61,17 +72,5 @@
     <a href="https://github.com/nageshnnazare/unix_threads_with_pthread_lib"><img src="https://img.shields.io/badge/Unix_Threads-3E2723?style=for-the-badge&logo=GNU&logoColor=white" /></a>
   </p>
 </div>
-
----
-
-### 🏆 Contributions
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="github-contribution-grid-snake.svg">
-  </picture>
-</p>
 
 ---
