@@ -1,6 +1,5 @@
-# Builds portfolio here, publishes to nageshnnazare.github.io (root URL).
-# Setup: create nageshnnazare.github.io repo + ACTIONS_DEPLOY_KEY secret (see below).
-name: Deploy to GitHub Pages
+# Syncs full source to nageshnnazare.github.io, then that repo builds & deploys the site.
+name: Sync to GitHub Pages repo
 
 on:
   push:
@@ -12,42 +11,39 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - 'vite.config.js'
+      - 'eslint.config.js'
+      - '.github/pages-site-deploy.yml'
+      - 'SITE_README.md'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: pages
+  group: sync-pages
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
+      - name: Prepare files for pages repo
+        run: |
+          cp .github/pages-site-deploy.yml .github/workflows/deploy.yml
+          cp SITE_README.md README.md
+          rm -f SITE_README.md
 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      - name: Publish to nageshnnazare.github.io
+      - name: Sync source to nageshnnazare.github.io
         uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: nageshnnazare/nageshnnazare.github.io
           publish_branch: main
-          publish_dir: ./dist
+          publish_dir: .
           force_orphan: true
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
-          commit_message: 'deploy: portfolio @ ${{ github.sha }}'
+          commit_message: 'sync: source from nageshnnazare@${{ github.sha }}'
