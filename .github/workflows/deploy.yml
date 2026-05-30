@@ -1,44 +1,26 @@
-name: Deploy to GitHub Pages
+# Builds in nageshnnazare/nageshnnazare; publishes to https://nageshnnazare.github.io
+# Requires GH_PAGES_TOKEN (see README or repo secrets).
+name: Trigger portfolio deploy
 
 on:
   push:
     branches: [master]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'index.html'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'vite.config.js'
   workflow_dispatch:
 
-permissions:
-  contents: read
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
-
 jobs:
-  build:
+  trigger:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Trigger deploy on nageshnnazare.github.io
+        uses: peter-evans/repository-dispatch@v3
         with:
-          node-version: 20
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      - name: Deploy to nageshnnazare.github.io
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          personal_token: ${{ secrets.GH_PAGES_TOKEN }}
-          publish_dir: ./dist
-          external_repository: nageshnnazare/nageshnnazare.github.io
-          publish_branch: main
-          force_orphan: true
-          user_name: github-actions[bot]
-          user_email: github-actions[bot]@users.noreply.github.com
-          commit_message: 'deploy: portfolio from nageshnnazare@${{ github.sha }}'
+          token: ${{ secrets.GH_PAGES_TOKEN }}
+          repository: nageshnnazare/nageshnnazare.github.io
+          event-type: deploy
