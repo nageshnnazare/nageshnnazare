@@ -43,6 +43,7 @@ jobs:
           external_repository: nageshnnazare/nageshnnazare.github.io
           publish_branch: main
           publish_dir: .
+          exclude_assets: ''
           force_orphan: true
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
