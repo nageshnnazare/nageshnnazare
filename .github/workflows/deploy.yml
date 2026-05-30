@@ -32,6 +32,7 @@ jobs:
 
       - name: Prepare files for pages repo
         run: |
+          rm -f .github/workflows/*.yml
           cp .github/pages-site-deploy.yml .github/workflows/deploy.yml
           cp SITE_README.md README.md
           rm -f SITE_README.md
