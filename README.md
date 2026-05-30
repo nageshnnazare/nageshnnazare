@@ -7,7 +7,7 @@
 
  <p>
    <a href="https://nageshnnazare.github.io/">
-     <img src="https://img.shields.io/badge/Portfolio-7AA2F7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio website" />
+     <img src="https://img.shields.io/badge/Visit Page-111111?style=for-the-badge&logo=HTMX&logoColor=red" alt="Portfolio website" />
    </a>
  </p>
 </div>
@@ -33,7 +33,7 @@
   <img src="https://img.shields.io/badge/-C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
   <img src="https://img.shields.io/badge/-CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
   <img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Shell_-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Shell_-39393D?style=for-the-badge&logo=gnu-bash&logoColor=white" />
 </div>
 
 ---
