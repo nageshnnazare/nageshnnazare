@@ -4,6 +4,12 @@
  <p> <img src="./asset/banner_none.png" alt="banner" width="100%" > </p>
 
  <p> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=7AA2F7&center=true&vCenter=true&width=500&lines=C%2FC%2B%2B+Software+Development;Linux+System+Programming;High-Performance+Computing;Machine+Learning;Graphics+Programming" alt="Typing SVG" /> </p>
+
+ <p>
+   <a href="https://nageshnnazare.github.io/">
+     <img src="https://img.shields.io/badge/Portfolio-7AA2F7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio website" />
+   </a>
+ </p>
 </div>
 
 <div align="center">
