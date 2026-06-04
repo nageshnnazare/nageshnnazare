@@ -1,16 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/mascot.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagesh N Nazare</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nagesh N Nazare Profile" />
+  <meta name="author" content="Nagesh N Nazare" />
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vscode/codicons@0.0.36/dist/codicon.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="welcome-overlay" id="welcome">
+    <div class="welcome-card">
+      <h1>Nagesh N Nazare</h1>
+      <p>Opening <kbd>profile.workspace</kbd> — low-level systems, performance at scale.<br />Drag panel edges to resize, like VS Code.</p>
+      <div class="welcome-progress"><div class="welcome-progress-bar" id="welcome-bar"></div></div>
+    </div>
+  </div>
+
+  <div id="app">
+    <header class="title-bar">
+      <div class="traffic-lights" aria-hidden="true">
+        <span class="close"></span>
+        <span class="minimize"></span>
+        <span class="maximize"></span>
+      </div>
+      <div class="title-bar-center">
+        <strong>profile.workspace</strong> — Visual Studio Code
+      </div>
+      <div class="layout-controls" role="toolbar" aria-label="Layout controls">
+        <button type="button" class="layout-btn active" data-layout="activity" title="Activity Bar" aria-pressed="true">
+          <span class="codicon codicon-layout-activitybar-left layout-icon" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="layout-btn active" data-layout="sidebar" title="Primary Side Bar (⌘B)" aria-pressed="true">
+          <span class="codicon codicon-layout-sidebar-left layout-icon" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="layout-btn active" data-layout="panel" title="Panel (⌘J)" aria-pressed="true">
+          <span class="codicon codicon-layout-panel layout-icon" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="layout-btn active" data-layout="ai" title="Secondary Side Bar — Agent" aria-pressed="true">
+          <span class="codicon codicon-layout-sidebar-right layout-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="workspace">
+      <nav class="activity-bar" id="activity-bar" aria-label="Activity Bar">
+        <button type="button" class="activity-item active" data-view="explorer" title="Explorer (⇧⌘E)">
+          <span class="codicon codicon-files" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="activity-item" data-view="search" title="Search (⇧⌘F)">
+          <span class="codicon codicon-search" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="activity-item" data-view="git" title="Source Control (⇧⌘G)">
+          <span class="codicon codicon-source-control" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="activity-item" data-view="agent" title="Agent">
+          <span class="codicon codicon-sparkle" aria-hidden="true"></span>
+        </button>
+        <div class="activity-spacer"></div>
+        <button type="button" class="activity-item" data-view="account" title="Accounts">
+          <span class="codicon codicon-account" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="activity-item" data-view="settings" title="Settings">
+          <span class="codicon codicon-settings-gear" aria-hidden="true"></span>
+        </button>
+      </nav>
+
+      <div id="split-main" class="split-horizontal" style="flex:1;min-width:0;">
+        <aside class="sidebar" id="sidebar">
+          <div class="sidebar-view active" id="sidebar-explorer" data-sidebar="explorer">
+            <div class="sidebar-header">
+              <span>Explorer</span>
+              <div class="sidebar-actions">
+                <button type="button" title="Collapse All" aria-label="Collapse">⊟</button>
+              </div>
+            </div>
+            <div class="file-tree" id="file-tree" role="tree" aria-label="Files"></div>
+          </div>
+          <div class="sidebar-view" id="sidebar-search" data-sidebar="search">
+            <div class="sidebar-header"><span>Search</span></div>
+            <div class="search-box-wrap">
+              <input type="text" class="search-input" id="search-input" placeholder="Search profile files…" />
+            </div>
+            <div class="search-results" id="search-results"></div>
+          </div>
+          <div class="sidebar-view" id="sidebar-scm" data-sidebar="git">
+            <div class="sidebar-header"><span>Source Control</span></div>
+            <div class="scm-panel">
+              <div class="scm-branch">⎇ main</div>
+              <div class="scm-item">M about.md</div>
+              <div class="scm-item">M skills.toml</div>
+              <div class="scm-item">A projects/lldb.cpp</div>
+              <p class="scm-hint">Portfolio workspace — static showcase</p>
+            </div>
+          </div>
+        </aside>
+
+        <div id="split-center-ai" class="split-horizontal" style="flex:1;min-width:0;">
+          <div class="center-column" id="center-column">
+            <div id="split-editor-panel" class="split-vertical" style="flex:1;min-height:0;display:flex;flex-direction:column;">
+              <div style="display:flex;flex-direction:column;flex:1;min-height:0;">
+                <div class="tab-bar" id="tab-bar"></div>
+                <div class="editor-toolbar" id="editor-toolbar">
+                  <div class="md-view-tabs" role="tablist" aria-label="Markdown view">
+                    <button type="button" class="md-view-tab active" data-md-view="preview" id="md-tab-preview" role="tab" aria-selected="true" title="Open Preview (⌘⇧V)">
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M2 3h12v10H2V3zm1 1v8h10V4H3zm1 1h8v2H4V5zm0 3h5v1H4V8z"/></svg>
+                      Preview
+                    </button>
+                    <button type="button" class="md-view-tab" data-md-view="source" id="md-tab-source" role="tab" aria-selected="false" title="Open Source (⌘K V)">
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2h9l3 3v9H4V2zm1 1v11h10V6h-3V3H5zm1 2h6v1H6V5zm0 2h5v1H6V7zm0 2h7v1H6V9z"/></svg>
+                      Source
+                    </button>
+                  </div>
+                </div>
+                <div class="breadcrumb" id="breadcrumb">
+                  <span>profile.workspace</span><span class="sep">›</span><span id="bc-file">about.md</span>
+                </div>
+                <div class="editor-container">
+                  <div id="markdown-preview" class="markdown-preview hidden" aria-label="Markdown preview"></div>
+                  <div id="monaco-editor"></div>
+                </div>
+              </div>
+
+              <div class="bottom-panel" id="bottom-panel">
+                <div class="panel-tabs">
+                  <div class="panel-tab active" data-panel="terminal">Terminal</div>
+                  <div class="panel-tab" data-panel="problems">Problems <span class="badge">0</span></div>
+                  <div class="panel-tab" data-panel="output">Output</div>
+                  <div class="panel-tab" data-panel="debug">Debug Console</div>
+                </div>
+                <div class="panel-content">
+                  <div class="panel-pane active" id="pane-terminal">
+                    <div class="terminal-wrap" id="terminal-wrap">
+                      <div class="terminal-output" id="terminal-output"></div>
+                      <div class="terminal-input-row" id="terminal-input-row">
+                        <span class="term-prompt" id="term-prompt-label">nagesh@jarvis:<span class="path">~/profile.workspace</span>$</span>
+                        <div class="terminal-input-wrap">
+                          <input type="text" class="terminal-input" id="terminal-input" spellcheck="false" autocomplete="off" autocapitalize="off" aria-label="Terminal command input" aria-autocomplete="list" aria-controls="term-suggestions" />
+                          <span class="term-ghost" id="term-ghost" aria-hidden="true"></span>
+                        </div>
+                        <ul class="term-suggestions" id="term-suggestions" role="listbox" hidden></ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-pane" id="pane-problems">
+                    <div class="static-panel" id="problems-list"></div>
+                  </div>
+                  <div class="panel-pane" id="pane-output">
+                    <div class="static-panel" id="output-log"></div>
+                  </div>
+                  <div class="panel-pane" id="pane-debug">
+                    <div class="static-panel">[Debug] Waiting for lldb attach…</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="ai-panel" id="ai-panel">
+            <div class="ai-header">
+              <span class="ai-header-icon codicon codicon-sparkle" aria-hidden="true"></span>
+              <h2>Agent</h2>
+              <span class="ai-badge">Auto</span>
+            </div>
+            <div class="ai-messages" id="ai-messages"></div>
+            <div class="ai-input-area">
+              <div class="ai-input-wrap">
+                <textarea rows="1" placeholder="Ask about performance, debugging, or my work…" id="ai-input" aria-label="Agent prompt"></textarea>
+                <button class="ai-send" type="button" id="ai-send" aria-label="Send">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
+                </button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <footer class="status-bar">
+      <div class="status-left">
+        <span class="status-item" id="status-branch">⎇ main</span>
+        <span class="status-item" id="status-sync">↻ 0</span>
+        <span class="status-item" id="status-problems">⚠ 0 ○ 0</span>
+      </div>
+      <div class="status-right">
+        <span class="status-item" id="status-lang">Markdown</span>
+        <span class="status-item" id="status-encoding">UTF-8</span>
+        <span class="status-item" id="status-eol">LF</span>
+        <span class="status-item">Bengaluru</span>
+        <span class="status-item" id="status-cursor">Ln 1, Col 1</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/split.js@1.6.5/dist/split.min.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js"></script>
+  <script>
+    require.config({ paths: { vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs' } });
+  </script>
+  <script src="js/content.js"></script>
+  <script src="js/app.js"></script>
+</body>
 </html>
