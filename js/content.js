@@ -3,8 +3,7 @@ window.PROFILE = {
   meta: {
     name: 'Nagesh N Nazare',
     title: 'Staff Engineer, R&D · Low-Level Systems',
-    phone: '+91 8618336169',
-    email: 'nagesh.nazare0831@gmail.com',
+    email: 'nageshnnazare.official@gmail.com',
     location: 'Bengaluru, India',
     links: {
       linkedin: 'https://linkedin.com/in/nagesh-n-nazare/',
@@ -29,7 +28,7 @@ R&D Software Engineer with **7+ years** of experience in low-level systems devel
 | Platform | Handle |
 |----------|--------|
 | Website  | [nageshnnazare.github.io](https://nageshnnazare.github.io/) |
-| Email    | [nagesh.nazare0831@gmail.com](mailto:nagesh.nazare0831@gmail.com) |
+| Email    | [nageshnnazare.official@gmail.com](mailto:nageshnnazare.official@gmail.com) |
 | LinkedIn | [nagesh-n-nazare](https://linkedin.com/in/nagesh-n-nazare/) |
 | GitHub   | [nageshnnazare](https://github.com/nageshnnazare) |
 | Scholar  | [NageshNNazare](https://scholar.google.com/citations?user=KDOJ2IAAAAAJ) |
@@ -75,7 +74,7 @@ other = ["raylib", "ncurses"]
       folder: 'experience',
       content: `# Synopsys Inc.
 
-> Staff Engineer, R&D Engineering · Sep 2022 — Present · Bengaluru  
+> Staff Engineer, R&D Engineering · Sep 2022 — Present · Bengaluru
 > Design Compiler / Fusion Compiler · C/C++/Tcl/Python/Verilog
 
 ## Highlights
@@ -93,7 +92,7 @@ other = ["raylib", "ncurses"]
       folder: 'experience',
       content: `# Bharat Electronics Ltd.
 
-> Deputy Engineer, Product R&D · Oct 2018 — Aug 2022 · Bengaluru  
+> Deputy Engineer, Product R&D · Oct 2018 — Aug 2022 · Bengaluru
 > Strategic Communications · Embedded C/C++/CMake/Verilog
 
 ## Highlights
@@ -110,7 +109,7 @@ other = ["raylib", "ncurses"]
       folder: 'experience',
       content: `# Nokia
 
-> Intern, R&D (YICP) · Aug 2017 — Dec 2017 · Bengaluru  
+> Intern, R&D (YICP) · Aug 2017 — Dec 2017 · Bengaluru
 > Networks · C/C++/Arduino
 
 ## Highlights
@@ -284,8 +283,7 @@ def main():
   "role": "Staff Engineer, R&D Engineering",
   "company": "Synopsys Inc.",
   "location": "Bengaluru, India",
-  "phone": "+91 8618336169",
-  "email": "nagesh.nazare0831@gmail.com",
+  "email": "nageshnnazare.official@gmail.com",
   "linkedin": "https://linkedin.com/in/nagesh-n-nazare/",
   "github": "https://github.com/nageshnnazare",
   "google_scholar": "https://scholar.google.com/citations?user=KDOJ2IAAAAAJ&hl=en",

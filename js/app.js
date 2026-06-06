@@ -960,7 +960,7 @@ Press Tab to autocomplete commands and file paths.`,
     const replies = [
       'I specialize in **low-level systems** — C/C++17, multi-threaded EDA tools, and production debugging with ASan/TSan. Open **experience/synopsys.md** for recent wins.',
       'Check **projects/cynide** for my AoT compiler work, or the **lldb** PR in **projects/lldb.cpp**.',
-      'Reach me at **nagesh.nazare0831@gmail.com** — see **contact.json** for links.',
+      'Reach me at **nageshnnazare.official@gmail.com** — see **contact.json** for links.',
     ];
     let replyIdx = 0;
 
