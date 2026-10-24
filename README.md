@@ -15,9 +15,9 @@
 
   <!-- Action & Connect Badges -->
   <p>
-    <a href="https://nageshnnazare.github.io/">
+    <!-- <a href="https://nageshnnazare.github.io/">
       <img src="https://img.shields.io/badge/🌐_Portfolio-6366F1?style=for-the-badge&logoColor=white" alt="Portfolio Website" />
-    </a>
+    </a> -->
     <a href="https://in.linkedin.com/in/nagesh-n-nazare">
       <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
