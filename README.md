@@ -64,9 +64,9 @@
 ---
 
 <!-- Git Koi --> 
-<div class="git-koi" align="center">
-<figure><img src="koi/koi.gif" width="512" height="512" alt="The koi swimming"></figure>
-</div>
+<!-- <div class="git-koi" align="center">
+<figure><img src="koi/koi.gif" width="256" height="256" alt="The koi swimming"></figure>
+</div> -->
 
 <!-- ---
 
