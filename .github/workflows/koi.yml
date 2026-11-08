@@ -5,10 +5,11 @@ name: Koi
 on:
   schedule:
     # Just after midnight UTC, so the koi shows the day that just ended.
-    - cron: "20 0 * * *"
-  workflow_dispatch:
+    - cron: "0 */6 * * *"
   push:
-    paths: [.github/workflows/koi.yml]
+    branches:
+      - master
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -34,5 +35,10 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit --quiet --message "koi: draw the day's koi"
-          git push --quiet
+          git add -A
+          git stash
+          git pull --rebase
+          git stash pop || echo "No stash to pop"
+          git add -A
+          git commit -m "chore: koi draw" || exit 0
+          git push
