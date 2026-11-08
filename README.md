@@ -51,6 +51,11 @@
 
 ---
 
+<!-- Git Koi --> 
+<img src="koi/koi.gif" width="256" />
+
+---
+
 ### 🏆 Contribution Activity
 
 <p align="center">
