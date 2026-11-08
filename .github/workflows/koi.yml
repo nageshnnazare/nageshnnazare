@@ -1,10 +1,7 @@
-# Copy into your profile repository as .github/workflows/koi.yml, then embed
-# <img src="koi/koi.gif" width="256" alt="My koi"> in its README.md.
 name: Koi
 
 on:
   schedule:
-    # Just after midnight UTC, so the koi shows the day that just ended.
     - cron: "0 */6 * * *"
   push:
     branches:
@@ -25,6 +22,25 @@ jobs:
         with:
           body: white
           output-dir: koi
+
+      - name: Add legend
+        shell: bash
+        run: |
+            convert -size 160x512 xc:none \
+            -font DejaVu-Sans-Bold -pointsize 12 \
+            -fill white -stroke black -strokewidth 1 \
+            -gravity center \
+            -annotate +0-90 "Color =" \
+            -annotate +0-70 "top language" \
+            -annotate +0+10 "Size =" \
+            -annotate +0+30 "contributions" \
+            -annotate +0+110 "Marks =" \
+            -annotate +0+130 "streaks" \
+            koi/legend.png
+            convert koi/koi.gif koi/legend.png -append koi/koi_annotated.gif
+            mv koi/koi_annotated.gif koi/koi.gif
+            rm koi/legend.png
+
       - name: Commit the koi if it changed
         shell: bash
         run: |
@@ -41,4 +57,4 @@ jobs:
           git stash pop || echo "No stash to pop"
           git add -A
           git commit -m "chore: koi draw" || exit 0
-          git push
+          git push   
