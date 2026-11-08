@@ -51,11 +51,6 @@
 
 ---
 
-<!-- Git Koi --> 
-<img src="koi/koi.gif" width="256" />
-
----
-
 ### 🏆 Contribution Activity
 
 <p align="center">
@@ -65,6 +60,13 @@
     <img alt="github contribution grid snake animation" src="github-contribution-grid-snake.svg">
   </picture>
 </p>
+
+---
+
+<!-- Git Koi --> 
+<div class="git-koi" align="center">
+<figure><img src="koi/koi.gif" width="512" height="512" alt="The koi swimming"></figure>
+</div>
 
 <!-- ---
 
